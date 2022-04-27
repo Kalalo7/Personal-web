@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Head todo la info que es para el navegador y no se ve, salvo el titulo. -->
+	<meta charset="UTF-8">
+	<title>Martin Fauci</title>
+	<!-- Estilos de Bootstrap que es codigo responsive y visual ya escrito por otro. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- codigo de colores y estilos escrito por nosotros -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Tipografia openSans -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+<!-- <body> Todo lo que se ve en la pantalla del usuario -->
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			<!-- en esta linea cambiamos nuestro logo. -->
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
+				<img src="images/001-coding.svg" alt="" class="logo"></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#nosotros" data-ancla="nosotros">Quien Soy?</a></li>
+					<li><a href="#servicios" data-ancla="servicios">Productos</a></li>
+					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1>Martin Fauci</h1> 
+			<h4>Programador en progreso, metiendo mano a código mientras espero que alguna empresa IT me contrate</h4>
+			<p>¿Estas interesado en contar con los servicios de este joven programador para tus proyectos? en el siguiente link te dejo mi CV así te sacás todas las dudas</p>
+<a  href="https://drive.google.com/file/d/1TAJTmmtMa711xE5cYEWbjpNEhtibukv-/view?usp=sharing" target="_blank" class="btn btn-primary orange">MI CV</a>
+
+
+		</div>
+</div>
+
+<div class="nosotros orange" id="nosotros">
+	<div class="container">
+		<br>
+		<h1>Sobre mi</h1>
+		<p>Mi nombre es Martin Fauci, tengo 32 años, y estoy en búsqueda de mi primer empleo IT. Estoy formándome de manera guiada y complementando con material disponible en la web de manera autodidacta. </p>
+		<p>Trabajo hace 12 años en una cadena de Retail, la cual me permitió ingresar al mundo laboral y productivo y pagarme mis estudios (tambien soy Técnico en Seguridad e Higiene), pero llegó el momento de hacer lo que realmente me gusta, programar. </p>
+		<p>Por ahora me llevo mejor con el front-end que con el back-end, pero tengo un enfoque full stack. Es cuestión de práctica. Lo que no sepa, se lee y se aprende!</p>
+		<p></p>
+	</div>
+</div>
+
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Que te puedo ofrecer?</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-4">
+			<img src="images/003-web-design.svg" alt="">
+			<h3>Diseño web</h3>
+			<p>¿Querés tener tu propia pagina web tan copada como ésta? yo puedo hacerlo! y de acuerdo a tus necesidades.</p>
+		</div>
+		<div class="col-md-4">
+			<img src="images/ventas.svg" alt="">
+			<h3>E-Commerce</h3>
+			<p>¿Querés tu propia plataforma para vender online, ya sea para tu negocio o deshacerte de tus cosas en desuso? Podes tenerla!</p>
+		</div>
+		<div class="col-md-4">
+			<img src="images/coming-soon.svg" alt="">
+			<h3>Portafolio</h3>
+			<p>Próximamente mas información sobre otros proyectos personales o colaborativos en los que estoy trabajando!</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>CONTACTO</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:martinfauci@gmail.com"><img src="images/001-mail.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/martin-fauci/"  target="_blank"><img src="images/004-linkedin.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://www.instagram.com/martinfkalalo/" ><img src="images/003-instagram-social-network-logo-of-photo-camera.svg" alt=""></a></div>	
+	</div>
+</footer>
+<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
